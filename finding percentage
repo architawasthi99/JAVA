@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Student{
+    public static void main(String[]args){
+        System.out.println("ENTER THE MARKS OF 5 STUDENTS");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the english marks");
+        int a=sc.nextInt();
+        System.out.println("enter the maths marks");
+        int b=sc.nextInt();
+        System.out.println("enter the physics marks");
+        int c=sc.nextInt();
+        System.out.println("enter the chemistry marks");
+        int d=sc.nextInt();
+        System.out.println("enter the ecology marks");
+        int e=sc.nextInt();
+        float percentage=((float)(a+b+c+d)/500.0f)*100;
+        System.out.println("PERCENTAGE IS : ");
+        System.out.println(percentage);
+    }
+}
