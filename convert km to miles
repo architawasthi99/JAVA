@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class Kilo{
+    public static void main(String[]args){
+        System.out.println("enter the kilometers");
+        Scanner sc=new Scanner(System.in);
+        float km=sc.nextFloat();
+        float miles=km*0.621f;
+        System.out.println(miles);
+    }
+}
