@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class input{
+    public static void main(String[]args){
+        System.out.println("ENTER THE NUMBERS");
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the digit 1: ");
+        int a=sc.nextInt();
+        System.out.println("enter the digit 2nd: ");
+        int b=sc.nextInt();
+        int sum=a+b;
+        System.out.println("THE SUM IS : ");
+        System.out.println(sum);
+    }
+}
