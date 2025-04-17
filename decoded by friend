@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Friend{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("WHAT ARE YOUR GRADES");
+        int a=sc.nextInt();
+        int result=a-8;
+        System.out.println("your grades are: ");
+        System.out.println(result);
+    }
+}
