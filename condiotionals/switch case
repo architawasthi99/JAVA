@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Bots{
+    public static void main(String[]args){
+        System.out.println("enter your age");
+        Scanner sc=new Scanner(System.in);
+        int age=sc.nextInt();
+        switch(age){
+            case 18:
+                System.out.println("you are balik");
+                break;
+            case 2:
+                System.out.println("you are not balik");    
+                break;
+            case 22:
+                System.out.println("you are can be balik");    
+                break;
+            default:
+                System.out.println("enjoy your life ");
+        }
+    }
+}
