@@ -1,0 +1,12 @@
+//Q-1 STRING TO LOWECASE
+public class Bots{
+    public static void main(String[]args){
+        String name="A R C H I T A W A S T H I";
+        System.out.println(name.toLowerCase());
+        System.out.println(name.replace(" ","_"));
+        
+        //PROBLEM-3
+        String letter="DEAR <|NAME|>,THANKS A LOT";
+        System.out.println(letter.replace("<|NAME|>","ARCHIT"));
+    }
+}
