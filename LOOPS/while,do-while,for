@@ -1,0 +1,23 @@
+public class Loops{
+    public static void main(String[]args){
+        int i=0;
+        while(i<=10){
+            System.out.print(i+" ");
+            i++;
+        }
+        System.out.println(" ");
+        int b=5;
+        do{
+            System.out.print(b+" ");
+            b++;
+        }while(b<=15);
+        System.out.println(" "); 
+        for(int j=0;j<=10;j++){
+            System.out.print(j+" ");
+        }
+        System.out.println(" "); 
+        for(int n=0;n<=10;n++){
+            System.out.print(2*n+1+" ");
+        }
+    }
+}
