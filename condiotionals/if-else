@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Age{
+    public static void main(String []args){
+        System.out.println("enter the number");
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        if(a<18){
+            System.out.println("cannot drive");
+        }
+        else{
+            System.out.println("can drive");
+        }
+    }
+}
