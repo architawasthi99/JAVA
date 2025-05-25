@@ -1,0 +1,72 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class StonePaperScissors {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
+
+        int userScore = 0;
+        int computerScore = 0;
+        int rounds = 5;
+
+        System.out.println("🎮 Welcome to Stone-Paper-Scissors Game!");
+        System.out.println("Instructions:");
+        System.out.println("0 - Stone 🪨");
+        System.out.println("1 - Paper 📄");
+        System.out.println("2 - Scissors ✂️");
+
+        for (int i = 1; i <= rounds; i++) {
+            System.out.println("\n--- Round " + i + " ---");
+            System.out.print("Enter your choice (0, 1, or 2): ");
+            int userChoice = sc.nextInt();
+
+            if (userChoice < 0 || userChoice > 2) {
+                System.out.println("❌ Invalid input! You lose this round.");
+                computerScore++;
+                continue;
+            }
+
+            int computerChoice = rand.nextInt(3);
+
+            System.out.println("Computer chose: " + choiceToString(computerChoice));
+            System.out.println("You chose: " + choiceToString(userChoice));
+
+            if (userChoice == computerChoice) {
+                System.out.println("It's a draw!");
+            } else if ((userChoice == 0 && computerChoice == 2) ||
+                       (userChoice == 1 && computerChoice == 0) ||
+                       (userChoice == 2 && computerChoice == 1)) {
+                System.out.println("✅ You win this round!");
+                userScore++;
+            } else {
+                System.out.println("❌ Computer wins this round!");
+                computerScore++;
+            }
+        }
+
+        // Final result
+        System.out.println("\n🏁 Game Over!");
+        System.out.println("Your Score: " + userScore);
+        System.out.println("Computer's Score: " + computerScore);
+
+        if (userScore > computerScore) {
+            System.out.println("🎉 Congratulations! You won the game!");
+        } else if (userScore < computerScore) {
+            System.out.println("😢 Sorry! Computer won the game.");
+        } else {
+            System.out.println("🤝 It's a tie!");
+        }
+
+        sc.close();
+    }
+
+    public static String choiceToString(int choice) {
+        switch (choice) {
+            case 0: return "Stone 🪨";
+            case 1: return "Paper 📄";
+            case 2: return "Scissors ✂️";
+            default: return "Invalid";
+        }
+    }
+}
