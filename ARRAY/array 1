@@ -1,0 +1,10 @@
+public class Array{
+    public static void main(String[]args){
+        float arr[]={12.2f,13.2f,66.9f,99.100f};
+        float sum=0;
+        for(float num :arr){
+            sum+=num;
+        }
+        System.out.println(sum);
+    }
+}
