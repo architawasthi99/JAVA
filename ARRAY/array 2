@@ -1,0 +1,11 @@
+public class Array{
+    public static void main(String[]args){
+        int arr[]={12,13,66,99};
+        int target=66;
+        for(float num :arr){
+            if(num==target){
+              System.out.println("target found "+ target);  
+            }
+        }
+    }
+}
