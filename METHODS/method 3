@@ -1,0 +1,17 @@
+public class Method{
+    static void foo(){
+        System.out.println("hello how are you");
+    }
+    static void foo(int a){
+        System.out.println("i am fine "+ a);
+    }
+    static void foo(int a,int b){
+        System.out.println("i am fine "+ a);
+        System.out.println("i am fine "+ b);
+    }
+    public static void main(String[]args){
+        foo();
+        foo(600);
+        foo(300,400);
+    }
+}
